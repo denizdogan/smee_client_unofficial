@@ -1,5 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "lock": "deno cache --reload --lock-write mod.ts"
   }
 }
