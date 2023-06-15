@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 import validator from "npm:validator@13.7.0";
 import EventSource from "npm:eventsource@2.0.2";
 import url from "node:url";
