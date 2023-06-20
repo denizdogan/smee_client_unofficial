@@ -50,7 +50,11 @@ class Client {
       }
     });
 
-    fetch(url.format(target), { method: "POST", body: JSON.stringify(body) })
+    fetch(url.format(target), {
+      method: "POST",
+      body: JSON.stringify(body),
+      headers,
+    })
       .then((res) => {
         this.logger.info(`POST ${res.url} - ${res.status}`);
       })
